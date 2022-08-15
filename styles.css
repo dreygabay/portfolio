@@ -1,0 +1,348 @@
+* {
+  box-sizing: border-box;
+}
+
+#vanta{
+  position: relative;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #07192f;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+.toggle-button{
+  background-color: white;
+  color: white;
+}
+
+main{
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #07192f;
+  color: #E8E8E8
+}
+
+.title{
+  font-size:  1rem;
+  margin: .5rem;
+}
+
+.navbar-links ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li{
+  list-style: none;
+}
+
+.navbar-links li a{
+  text-decoration: none;
+  color: #E8E8E8;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links li:hover{
+  background-color: #07192f;
+}
+
+.navbar-links li a:hover{
+  color: #495464;
+}
+
+.toggle-button{
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar{
+  height: 3px;
+  width: 100%;
+  background-color: #07192f;
+  border-radius: 10px;
+}
+
+
+.home .image-div{
+  background-color: #07192f;
+  height: 400px;
+  display: flex;
+  margin-top: 100px;
+}
+
+ .image-div #photo{
+  width: 360px;
+  height: 350px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+
+.name{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  background-color: #07192f;
+  max-width: 60%;
+  text-align: center;
+}
+
+.about-me{
+  margin-top: 500px;
+}
+
+.about-me, .introduction{
+  display: flex;
+  justify-content: center;
+  background-color: #07192f;
+}
+
+.paragraph{
+  line-height: 50px;
+}
+
+.skills-div input{
+  z-index: 1;
+}
+
+.icons{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.introduction .paragraph{
+  padding-left: 20vh;
+  padding-right: 20vh;
+}
+
+.skills-logo{
+  width: 100px;
+  height: 100px;
+}
+
+.contact{
+  display: flex;
+  margin-top: 300px;
+  justify-content: center;
+}
+
+#contact-me{
+  display: flex;
+  justify-content: center;
+  margin-top: 250px;
+}
+
+.socials{
+  display: flex;
+  justify-content: center;
+}
+
+.icons-socials{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.icons-socials > a{
+  z-index: 1;
+}
+
+.socials-email{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.socials-email-submit{
+  display: flex;
+  justify-content: center;
+}
+
+.socials-email-submit #text-email{
+  height: 40px;
+  width: 400px;
+  font-size: 20px;
+}
+
+#footer-div{
+  margin-top: 300px;
+  height: 40px;
+  width: 100%px;
+  background: none;
+}
+
+img, .name > h1, .name > h2{
+  z-index: 1;
+}
+
+.name > h2{
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 50px;
+}
+
+.image-div{
+  background: none;
+}
+
+img{
+  border: 1px solid white;
+  border-radius: 50px;
+  background-color: white;
+}
+
+div #vanta{
+  position: absolute;
+  z-index: 0;
+  height: 10000px;
+  
+}
+
+.cube-container{
+  width: 10em;
+  height: 10em;
+  text-align: center;
+  perspective: 45em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cube{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition-duration: 2s;
+  transform: rotateX(-15deg) rotateY(20deg);
+}
+
+.cube-side{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #07192f;
+  border: 4px solid #07192f;
+  background-position: center;
+  background-size: cover;
+}
+
+.cube-side:nth-child(1){
+  transform: rotateY(0deg) translateZ(4.9em);
+  background-image: url("https://seeklogo.com/images/H/html5-without-wordmark-color-logo-14D252D878-seeklogo.com.png");
+}
+.cube-side:nth-child(2){
+  transform: rotateY(90deg) translateZ(4.9em);
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg");
+}
+.cube-side:nth-child(3){
+  transform: rotateY(180deg) translateZ(5em);
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg");
+}
+.cube-side:nth-child(4){
+  transform: rotateY(-90deg) translateZ(4.9em);
+  background-image: url("https://www.vectorlogo.zone/logos/java/java-icon.svg");
+}
+.cube-side:nth-child(5){
+  transform: rotateX(-90deg) translateZ(4.9em);
+  background-image: url("https://seeklogo.com/images/P/python-logo-A32636CAA3-seeklogo.com.png");
+}
+.cube-side:nth-child(6){
+  transform: rotateX(90deg) translateZ(4.9em);
+  background-image: url("https://cdn.worldvectorlogo.com/logos/c--4.svg");
+}
+
+.radio-button{
+  margin-bottom: 5em;
+}
+
+.radio-button:checked ~ .cube{
+  transition-duration: 3s;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.radio-button:nth-child(1):checked ~ .cube{
+  transform: rotateX(-15deg) rotateY(20deg)
+}
+.radio-button:nth-child(2):checked ~ .cube{
+  transform: rotateX(-15deg) rotateY(180deg)
+}
+.radio-button:nth-child(3):checked ~ .cube{
+  transform: rotateX(-15deg) rotateY(90deg)
+}
+.radio-button:nth-child(4):checked ~ .cube{
+  transform: rotateX(-15deg) rotateY(-90deg)
+}
+.radio-button:nth-child(5):checked ~ .cube{
+  transform: rotateX(-105deg) rotateY(0deg)
+}
+.radio-button:nth-child(6):checked ~ .cube{
+  transform: rotateX(75deg) rotateY(0deg)
+}
+
+
+
+
+@media (max-width: 800px){
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: .5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .introduction .paragraph{
+    padding-left: 10vh;
+    padding-right: 10vh;
+  }
+
+  .skills-logo{
+    width: 60px;
+    height: 60px;
+  }
+}
